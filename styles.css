@@ -1,0 +1,212 @@
+/*GENERAL STYLE------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  font-size: 0.625em;
+  text-align: center;
+  line-height: 3.7em;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family:Roboto, sans-serif;
+  color:  #ffffff;
+  font-size: 4em;
+  font-weight: 400;
+}
+h3{
+  font-family: Montserrat, sans-serif;
+  color:  #5e1b98;
+  font-size: 5.4em;
+  font-weight: 700;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  color:  #440b74;
+  font-size: 2.4em;
+  font-weight: 400;
+}
+a{
+  font-family: Montserrat,sans-serif;
+  color:  #582782;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+/*HEADER---------------------------------------------------------------*/
+header{
+  background: -webkit-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+  background: -moz-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+  background: -o-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+  background: -ms-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+  background: linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+  width: auto;
+  height: 800px;
+}
+header>h1 {
+  font-family:Montserrat, sans-serif;
+  color:  #ffffff;
+  font-size: 10em;
+  font-weight: 900;
+  transform: scaleY(1.0209);
+}
+/*NAVIGATION------------------------------------------------------------------*/
+nav{
+  list-style-type: none;
+}
+nav a{
+  font-family: Montserrat,sans-serif;
+  color:  #582782;
+  font-size: 2.8em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+}
+.navitem{
+    display:inline-block;
+    margin: 50px 10px;
+}
+/*SECTIONS--------------------------------------------------------------------*/
+section{
+  background: #fff;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+section>h1 {
+  font-family: Montserrat,sans-serif;
+  color: #e421b4;
+  font-size: 20em;
+  padding: 5px;
+  /*width: 200px;
+  height: 100px;
+  margin: 10px;
+  background: salmon;*/
+}
+
+/*ABOUT---------------------------------*/
+.about h1{
+float: left;
+/*color: #e421b4;
+font-size: 20em;
+width: 200px;
+height: 100px;
+margin: 10px;
+padding: 5px;
+background: salmon;*/
+}
+.more a{
+  padding: 10px;
+  border: 1px solid deeppink;
+}
+
+.about div{
+  padding: 50px 50px 50px 100px;
+  text-align: left;
+  background: #fef8ff;
+  height: 600px;
+}
+.about img{
+  float: right;
+  width: 500px;
+  margin: 30px 20px 10px 20px;
+}
+.contact{
+background: -webkit-linear-gradient(140deg, #9326f0 19%, #ff7fc4 81%);
+background: -moz-linear-gradient(140deg, #9326f0 19%, #ff7fc4 81%);
+background: -o-linear-gradient(140deg, #9326f0 19%, #ff7fc4 81%);
+background: -ms-linear-gradient(140deg, #9326f0 19%, #ff7fc4 81%);
+background: linear-gradient(-50deg, #9326f0 19%, #ff7fc4 81%);
+}
+
+/*WORK---------------------------------------------------*/
+.work h1{
+float: right;
+/*color: #e421b4;
+font-size: 20em;
+width: 200px;
+height: 100px;
+margin: 10px;
+padding: 5px;
+background: salmon;*/
+}
+.work img{
+  float: left;
+  width: 500px;
+  margin: 30px 20px 10px 20px;
+  padding: 0;
+}
+.work{
+  /*padding: 100px 50px 50px 100px;*/
+  text-align: right;
+  /*background: pink;*/
+}
+.company{
+  color:deeppink;
+  margin-top: 100px
+}
+.details {
+  margin: 0;
+  padding: 0;
+  /*width: 50%;*/
+  /*background: #fff;*/
+}
+.description {
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  /*background: grey;*/
+}
+.item{
+    padding: 10px 20px;
+    /*background: ghostwhite;*/
+}
+.item.item1 {
+  margin: 200px 0 0 0;
+}
+
+.item.item2 {
+  margin: 0;
+}
+.details.item2, .description.item2{
+  text-align: left;
+}
+/*MOTTO-----------------------------------------*/
+.motto{
+  text-align: left;
+}
+.motto h1{
+  background:url(images/fullbg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:Montserrat, sans-serif;
+  color:  #ffffff;
+  font-size: 10em;
+  font-weight: 900;
+  transform: scaleY(1.0209);
+  line-height: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+.wave-bottom{
+  width: 30%;
+  margin:0 auto;
+  position: fixed;
+  top:400px ;
+}
+/*PROJECTS---------------------------------------*/
+.projects h1{
+  display: inline-block;
+}
+/*CONTACT---------------------------------------*/
+.social a{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+/*MEDIA QUERY-----------------------------------------------------------------*/
