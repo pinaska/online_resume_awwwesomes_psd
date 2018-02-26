@@ -87,6 +87,7 @@ section{
   height: auto;
   width: 90%;
   margin: 0 auto;
+  clear: both;
 }
 section>h1 {
   font-family: Montserrat,sans-serif;
@@ -206,7 +207,8 @@ background: salmon;*/
   width: 30%;
   margin:0 auto;
   position: fixed;
-  top:400px ;
+  top:80%;
+  right: 50%;
 }
 /*PROJECTS---------------------------------------*/
 .projects h1{
