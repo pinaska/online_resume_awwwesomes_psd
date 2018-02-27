@@ -164,20 +164,21 @@ section{
 
 /*MOTTO-----------------------------------------*/
 .motto{
-  text-align: left;
+  background:url(images/fullbg.jpg) no-repeat fixed;
+  height: 400px;
+  width: 100%;
+  text-align: center;
   clear:both;
+
 }
 .motto h1{
-  background:url(images/fullbg.jpg);
-  background-repeat: no-repeat;
-  font-family:Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   color:  #ffffff;
   font-size: 4em;
   font-weight: 900;
-  transform: scaleY(1.0209);
   line-height: 2em;
-  text-align: center;
   margin: 0 auto;
+  padding: 20%;
 }
 .wave-bottom{
   width: 30%;
