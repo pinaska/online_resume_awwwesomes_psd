@@ -17,8 +17,6 @@
 </head>
 <!---page content----------->
 <body>
-  <!--fixed element: arrow or wave
-  <img src="wave-bottom.svg" alt="wave-bottom-pink" class="wave-bottom">-->
   <!--header with big pic and navigation menu--->
   <header>
     <nav>
@@ -52,14 +50,15 @@
       <div class="col1work"><img src="https://images.unsplash.com/photo-1468971050039-be99497410af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a2c0a3304a3277c81c4f1a0adb83bdb1&auto=format&fit=crop&w=1190&q=80" alt="work-work-harder-words" class="aboutImg">
       </div>
       <div class="col2work">
-        <h1 class="number">2.</h1>
-        <div class="details">
+        <div class="column-50 txt-indent" id="paragraph2">
+          <div class="smalltext">
         <h3>work.</h3>
-        <h3>kasia i kod</h3>
+        <p>kasia i kod</p>
         <p>freelance</p>
         <p>2014-present</p>
         <p>Macchiato aromatic so as, cinnamon sit redeye in doppio trifecta. Latte blue mountain, kopi-luwak, doppio irish body mazagran body.Macchiato aromatic so as, cinnamon sit redeye in doppio trifecta. Latte blue mountain, kopi-luwak, doppio irish body mazagran body.</p>
         <p><span class="more"><a href="#" target="_blank">more about my work.</a></span></p>
+      </div>
       </div>
         </div>
     </section>
@@ -69,15 +68,22 @@
       <img src="images/wave-bottom.svg" id="wave-bottom">
     </div>
     <!--projects start----->
-    <section class="projects" id="projects">
-      <h1>3.</h1>
-      <h3>projects.</h3>
-      <p></p>
+    <section id="projects">
+        <div class="col1">
+            <div class="column-50 txt-indent" id="paragraph3">
+              <h3>projects.</h3>
+              <p class="smalltext">
+            Everyday carry cray vegan microdosing waistcoat, godard portland gentrify viral vape hammock. Prism lyft cold-pressed, snackwave bespoke squid schlitz typewriter pinterest jean shorts. Kale chips pitchfork lumbersexual ugh, messenger bag forage kitsch cold-pressed cred cronut meggings umami. Gastropub ethical copper mug, authentic four loko chicharrones salvia fingerstache vaporware chia church-key hoodie single-origin coffee.<p>
+              <p><span class="more"><a href="#" target="_blank">more projects.</a></span></p>
+            </div>
+      </div>
+      <div class="col2projects">
+        <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e37a38ee23569d8e72896968903cf67a&auto=format&fit=crop&w=1050&q=80" alt="kkj_sign_neon" class="aboutImg">
+        <p class="article-title">first project</p>
+      </div>
+    </section>
+    <section id="projects-grid-container">
       <div class="grid-container">
-        <article class="grid-item">
-          <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e37a38ee23569d8e72896968903cf67a&auto=format&fit=crop&w=1050&q=80" alt="kkj_sign_neon" class="article-img">
-          <p class="article-title">first project</p>
-        </article>
         <article class="grid-item">
           <img src="https://images.unsplash.com/photo-1509857820193-a5c67e4c20ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=923eb9faaed30ab9901652574cdb1ae5&auto=format&fit=crop&w=967&q=80" alt="kkj_sign_neon_wilder" class="article-img">
           <p class="article-title">second project</p>
@@ -92,22 +98,26 @@
       </div><!--grid-container end------------>
     </section>  <!--projects end---------->
     <!--contact start--------->
-    <section class="contact" id="contact">
-      <div class="contact-text">
-        <h1>4.</h1>
+    <footer>
+      <div class="col1">
+      <div class="column-50 center-footer-txt">
         <h3>contact.</h3>
-        <p>Let's stay in touch!</p>
+        <h1>Let's stay in touch!</h1>
       </div>
-      <div class="social">
-        <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" title="Github"><i class="fa fa-github-alt"></i></a>
-        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+    </div>
+      <div class="column-50" id="contact">
+        <form>
+          <label for="name">name</label>
+          <input type="text" id="name">
+          <label for="mail">e-mail</label>
+          <input type="email" id="mail">
+          <label for="message">message</label>
+          <textarea id="message"></textarea>
+          <p><span class="more"><a href="#" target="_blank">send.</a></span></p>
+        </form>
       </div>
-    </section>
   <!-- main text end--->
-  <footer>
-    <p class="footer">built by Kasia Kate Jeziorska #kasiaikod, thanks for visiting!</p>
   </footer>
+  <p class="credits">built by Kasia Kate Jeziorska #kasiaikod | layout inspired by The Awwwesomes 2017 | thanks for visiting!</p>
 </body>
 </html>
