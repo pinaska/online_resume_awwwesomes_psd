@@ -7,7 +7,7 @@ body{
   text-align: center;
   line-height: 1.5em;
   margin: 0 auto;
-  width: 960px;
+  /*width: 960px;*/
 }
 img{
   max-width: auto;
@@ -51,8 +51,8 @@ p {
 li {
   font-family: 'Roboto', sans-serif;
   color:  #440b74;
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
 }
 ul{
   list-style-type: none;
@@ -71,8 +71,10 @@ header{
   background: -o-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
   background: -ms-linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
   background: linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
-  width: auto;
   height: 445px;
+	text-align: center;
+	color: #ffffff;
+	position: relative;
   }
 header>h1 {
   font-family:Montserrat, sans-serif;
@@ -107,22 +109,58 @@ section{
   position: relative;
   overflow: hidden;
 }
-
+#about, #work{
+  width: 960px;
+}
 .details{
   margin-left: 40px;
 }
 
 /*ABOUT---------------------------------*/
 .col1{
-  position: absolute;
-  z-index: 2;
+  position: relative;
   float: left;
   text-align: left;
   padding: 30px;
   width: 600px;
   height:300px;
-  /*background-color: rgb(243, 235, 245);*/
+  background-color: rgb(243, 235, 245);
   }
+  .smalltext{
+    width: 37%;
+    color: #440c74;
+  	font-size: 12px;
+  	font-family: 'Roboto', sans-serif;
+  	line-height: 20px;
+
+  }
+  .column-50{
+  	width: 50%;
+  	float: left;
+  	height: 100%;
+  }
+  .txt-indent {
+  	margin-left: 80px;
+  	margin-top: 48px;
+  	padding-left: 28px;
+  }
+  #paragraph1{
+    position: relative;
+  }
+#paragraph1::before{
+  content: "1.";
+	position: absolute;
+	top: -24px;
+	left: -80px;
+	color: #e678d7;
+	font-size: 247px;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: 8px;
+	z-index: -1;
+}
+
+
 .more a{
   padding: 10px;
   border: 1px solid deeppink;
@@ -134,7 +172,7 @@ section{
       padding: 30px;
       width: 360px;
       height:300px;
-      /*background-color: #f6d6f4;*/
+      background-color: #f6d6f4;
 }
 .aboutImg{
   max-width: 300px;
@@ -149,7 +187,7 @@ section{
       width: 360px;
       height:350px;
       padding: 30px;
-      /*background-color: #f6d6f4;*/
+      background-color: #f6d6f4;
 }
 
 .col2work{
@@ -158,26 +196,52 @@ section{
   padding: 30px;
   width: 600px;
   height:350px;
-  /*background-color: rgb(243, 235, 245);*/
+  background-color: rgb(243, 235, 245);
 }
 
 /*MOTTO-----------------------------------------*/
 .motto{
-  background:url(images/fullbg.jpg)no-repeat fixed;
+  background-image: url(images/fullbg.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: 0% 11%;
+	height: 350px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	position: relative;
 }
 .motto h1{
-  font-family: Montserrat, sans-serif;
-  color:  #fff;
-  font-size: 4em;
-  font-weight: 900;
-  line-height: 2em;
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Montserrat' , sans-serif;
+    color: #fff;
+    font-size: 7em;
+    font-weight: 900;
+    line-height: 1em;
+    letter-spacing: 2px;
 }
-.wave-bottom{
-  width: 30%;
-  margin:0 auto;
-  position: fixed;
-  bottom:0;
-  right: 0;
+#wave-bottom{
+  position: absolute;
+	max-width: 760px;
+	left: 0px;
+	bottom: -40px;
+}
+
+#wave-top {
+	position: absolute;
+	width: 500px;
+	right: 0px;
+	bottom: -35px;
+}
+
+#wave-top2 {
+	position: absolute;
+	width: 370px;
+	right: 0px;
+	bottom: 64px;
 }
 /*PROJECTS---------------------------------------*/
 .projects h1{
