@@ -8,7 +8,6 @@ body{
   line-height: 1.5em;
   margin: 0 auto;
   width: 960px;
-  height: 100%;
 }
 img{
   max-width: auto;
@@ -40,7 +39,7 @@ h2{
       color: deeppink;
       font-size: 200px;
       opacity:0.2;
-      font-weight: bolder;
+      font-weight: 900;
       font-family:Montserrat, sans-serif;
 }
 p {
@@ -164,28 +163,21 @@ section{
 
 /*MOTTO-----------------------------------------*/
 .motto{
-  background:url(images/fullbg.jpg) no-repeat fixed;
-  height: 400px;
-  width: 100%;
-  text-align: center;
-  clear:both;
-
+  background:url(images/fullbg.jpg)no-repeat fixed;
 }
 .motto h1{
   font-family: Montserrat, sans-serif;
-  color:  #ffffff;
+  color:  #fff;
   font-size: 4em;
   font-weight: 900;
   line-height: 2em;
-  margin: 0 auto;
-  padding: 20%;
 }
 .wave-bottom{
   width: 30%;
   margin:0 auto;
   position: fixed;
-  top:80%;
-  right: 50%;
+  bottom:0;
+  right: 0;
 }
 /*PROJECTS---------------------------------------*/
 .projects h1{
@@ -201,7 +193,7 @@ article {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
-  max-width: 1400px;
+  max-width: 960px;
   margin: 0 auto 30px;
 }
 .grid-item{
