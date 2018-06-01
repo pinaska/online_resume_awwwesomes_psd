@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+button, button:hover, button:active, button:focus, button:visited{
+    box-shadow: none;
+    outline:0;
+}
+
+textarea {
+    background-color: transparent;
+    border: 2px solid $color__purple;
+    width: 90%;
+    height: 120px;
+    margin-bottom: 8px;
+}
