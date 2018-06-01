@@ -193,30 +193,30 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  letter-spacing: inherit; }
+  margin: 0; }
 
 h1 {
-  font-size: 9.6rem;
-  font-weight: 400;
-  margin-top: 0; }
+  font-size: 2.5rem;
+  font-weight: 400; }
 
 h2 {
-  font-size: 1.75rem; }
+  font-size: 2rem; }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #582782; }
 
 h4 {
-  font-size: 1.2rem;
-  margin-bottom: .75rem; }
+  font-size: 1.2rem; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem;
   line-height: 1.75; }
+
+a {
+  text-decoration: none; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -273,14 +273,6 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
   font-family: "Montserrat", serif;
   color: #582782;
   text-align: center;
@@ -358,59 +350,66 @@ textarea {
   height: 120px;
   margin-bottom: 8px; }
 
-/*.number{
-        position: absolute;
-        z-index: 1;
-        color: deeppink;
-        font-size: 200px;
-        opacity:0.2;
-        font-weight: 900;
-        font-family:Montserrat, sans-serif;
-  }*/
 /*HEADER---------------------------------------------------------------*/
-header {
-  background: linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
+.banner {
+  background-image: linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
   height: 445px;
   text-align: center;
   color: #ffffff;
   position: relative; }
 
-header > h1 {
-  font-family: Montserrat, sans-serif;
-  color: #ffffff;
-  font-size: 4em;
-  font-weight: 900;
-  -webkit-transform: scaleY(1.0209);
-          transform: scaleY(1.0209); }
-
 #wave-top {
   position: absolute;
-  width: 500px;
+  width: 60%;
   right: 0px;
   bottom: -35px; }
 
 #wave-top2 {
   position: absolute;
-  width: 370px;
+  width: 60%;
   right: 0px;
   bottom: 64px; }
 
 /*NAVIGATION------------------------------------------------------------------*/
-nav {
-  list-style-type: none; }
-
-nav a {
-  font-family: Montserrat,sans-serif;
-  color: #582782;
-  font-size: 2em;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid white; }
-
-.navitem {
-  display: inline-block;
-  margin: 50px 10px; }
+.entry-text {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .entry-text h1 {
+    font-weight: bold;
+    line-height: 1.2; }
+    @media (min-width: 1080px) {
+      .entry-text h1 {
+        font-size: 3.5rem; } }
+  .entry-text p {
+    margin: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  .entry-text ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .entry-text ol li {
+      margin: 10px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      @media (min-width: 620px) {
+        .entry-text ol li a {
+          font-size: 2rem; } }
+      @media (min-width: 1080px) {
+        .entry-text ol li a {
+          font-size: 2.5rem; } }
 
 /*SECTIONS--------------------------------------------------------------------*/
 section {

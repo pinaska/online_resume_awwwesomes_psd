@@ -16,30 +16,27 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+	margin: 0;
 	// font-family:$font_second;
-	letter-spacing:inherit;
     // text-transform: uppercase;
 }
 h1{
-	font-size: 9.6rem;
+	font-size: 2.5rem;
 	font-weight: 400;
-	margin-top: 0;
 }
 
 h2{
-	font-size: 1.75rem;
+	font-size: 2rem;
 }
 
 h3{
-	font-size: 2.25rem;
+	font-size: 1.75rem;
     font-weight: 700;
 	color:$color__purple;
 }
 
 h4{
 	font-size: 1.2rem;
-    margin-bottom: .75rem;
 }
 
 /* Copy */
@@ -47,6 +44,9 @@ h4{
 p {
 	margin-bottom: $base__space-unit;
     line-height: 1.75;
+}
+a{
+	text-decoration: none;
 }
 
 dfn, cite, em, i {
