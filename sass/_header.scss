@@ -1,7 +1,14 @@
   /*HEADER---------------------------------------------------------------*/
   .banner{
     background-image: linear-gradient(45deg, #fe6b83 0%, #9326f0 100%);
-    height: 445px;
+    height: 500px;
+    padding: 2.5%;
+    @include tablet{
+        height: 100%;
+    }
+    @include desktop{
+        height: 100%;
+    }
     text-align: center;
     color: #ffffff;
     position: relative;
@@ -23,24 +30,30 @@
   }
   /*NAVIGATION------------------------------------------------------------------*/
 .entry-text{
-    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     h1{
-        font-weight: bold;
-        line-height: 1.2;
+        @include tablet{
+            padding-top: 10px;
+            font-size: 3rem;
+        }
         @include desktop{
-            font-size: 3.5rem;
+            font-size: 5rem;
         }
       }
      p{
          margin:0;
+         padding:1rem;
          transform: translateY(-10px);
+         @include tablet{
+             font-size:2rem;
+         };
      }
     ol{
         display: flex;
+        flex-wrap: wrap;
         li{
             margin: 10px;
             flex-grow: 1;
@@ -55,3 +68,18 @@
         }
     }
 }
+.we_create_ {
+    font-size: 22.694px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.628;
+    -moz-transform: matrix( 10.0161701812094,0,0,10.2250571505235,0,0);
+    -webkit-transform: matrix( 10.0161701812094,0,0,10.2250571505235,0,0);
+    -ms-transform: matrix( 10.0161701812094,0,0,10.2250571505235,0,0);
+    position: absolute;
+    left: 1189.778px;
+    top: 386.027px;
+    z-index: 4;
+  }
+  
