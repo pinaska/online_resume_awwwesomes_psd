@@ -211,26 +211,30 @@ textarea {
   text-align: center;
   color: #ffffff;
   position: relative; }
-  @media (min-width: 620px) {
-    .banner {
-      height: 100%; } }
-  @media (min-width: 1080px) {
-    .banner {
-      height: 100%; } }
 
 #wave-top {
   position: absolute;
   width: 60%;
-  max-width: 400px;
+  max-width: 600px;
   right: 0px;
-  bottom: -35px; }
+  bottom: -10px; }
+  @media (min-width: 620px) {
+    #wave-top {
+      bottom: -35px; } }
 
 #wave-top2 {
-  position: absolute;
-  width: 60%;
-  max-width: 400px;
   right: 0px;
-  bottom: 64px; }
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+  width: 40%;
+  max-width: 400px; }
+  @media (min-width: 620px) {
+    #wave-top2 {
+      bottom: 40px; } }
+  @media (min-width: 1080px) {
+    #wave-top2 {
+      bottom: 60px; } }
 
 /*NAVIGATION------------------------------------------------------------------*/
 .entry-text {
@@ -271,7 +275,8 @@ textarea {
       margin: 10px;
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
-              flex-grow: 1; }
+              flex-grow: 1;
+      text-transform: uppercase; }
       @media (min-width: 620px) {
         .entry-text ol li a {
           font-size: 2rem; } }
@@ -309,17 +314,22 @@ main {
   @media (min-width: 620px) {
     .section-grid {
       padding: 2.5%;
-      margin: 0 5%;
-      grid-template-columns: 1fr 1fr; } }
-  @media (min-width: 620px) and (min-width: 620px) {
-    .section-grid.about {
-      grid-template-columns: 60% 35%; } }
+      margin: 2% 5%;
+      grid-template-columns: 1fr 1fr; }
+      .section-grid.about {
+        margin-top: 50px; } }
+    @media (min-width: 620px) and (min-width: 620px) {
+      .section-grid.about {
+        grid-template-columns: 60% 35%; } }
   @media (min-width: 620px) and (min-width: 620px) {
     .section-grid.work {
       grid-template-columns: 35% 60%; } }
-  @media (min-width: 620px) and (min-width: 620px) {
-    .section-grid.projects {
-      grid-template-columns: 60% 35%; } }
+  @media (min-width: 620px) {
+      .section-grid.projects {
+        margin-top: 50px; } }
+    @media (min-width: 620px) and (min-width: 620px) {
+      .section-grid.projects {
+        grid-template-columns: 60% 35%; } }
   @media (min-width: 1080px) {
     .section-grid {
       padding: 2.5%;
@@ -355,56 +365,83 @@ main {
     .about .text {
       margin-bottom: 0; } }
 
-#paragraph1::before {
-  content: "1.";
-  position: absolute;
-  top: 20px;
-  left: -80px;
-  color: #e678d7;
-  font-size: 247px;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  letter-spacing: 8px;
-  z-index: -1; }
+.about .text h3 {
+  position: relative; }
+  .about .text h3:before {
+    content: "1.";
+    position: absolute;
+    color: #e579d7;
+    font-weight: bold;
+    top: 4.5rem;
+    left: -5rem;
+    font-size: 15rem;
+    letter-spacing: 0.5rem;
+    z-index: -6; }
 
 /*WORK---------------------------------------------------*/
-#paragraph2 {
-  position: relative; }
-
-#paragraph2:after {
-  content: "2.";
-  position: absolute;
-  top: -52px;
-  left: -48px;
-  color: #fb7f97;
-  font-size: 247px;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  letter-spacing: 8px;
-  z-index: -1; }
+.work .text {
+  margin-left: 3rem; }
+  .work .text h3 {
+    position: relative;
+    font-weight: bold; }
+    .work .text h3:after {
+      content: "2.";
+      position: absolute;
+      top: 4.5rem;
+      left: -5rem;
+      color: #fb7f97;
+      font-size: 15rem;
+      letter-spacing: 0.5rem;
+      z-index: -7; }
 
 /*MOTTO-----------------------------------------*/
 .motto {
-  background-image: url("./../../images/wave-bottom.svg"), url("./../../images/fullbg.jpg");
-  background-position: left bottom, center;
-  background-size: 80% 5%, cover;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("./../../images/fullbg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
+  .motto img {
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    z-index: 1;
+    width: 60%; }
+    @media (min-width: 620px) {
+      .motto img {
+        bottom: -30px; } }
+    @media (min-width: 1080px) {
+      .motto img {
+        bottom: -50px; } }
   .motto h1 {
     font-weight: bolder; }
     @media (min-width: 620px) {
       .motto h1 {
         font-size: 5rem; } }
+
+.wave {
+  background-image: url("wave.png");
+  position: absolute;
+  left: 0px;
+  top: 2989px;
+  width: 1259px;
+  height: 149px;
+  z-index: 44; }
 
 /*CONTACT---------------------------------------*/
 footer {
