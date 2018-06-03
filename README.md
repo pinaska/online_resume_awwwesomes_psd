@@ -8,6 +8,7 @@ This project one-page html-css only website is to practise my HTML and CSS skill
 * Gulp task runner
     * npm install, gulp-sourcemaps, gulp-eslint,gulp-uglify, gulp-cssnano, gulp-prettyerror, gulp-rename, browser-sync(check, why it is not working at my comp)
 * CSS grid and flexbox
+* page smooth scroll with jQuery cdn (check, if CSS property scroll-behavior has better browser support and try to implement it: [link to mdn doc](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior))
 
 ### personal learnings:
 I wanted to make this one page site responsive with mobile-first approach. All the CSS styling is written for three screen widths: mobile, min-width:620px and min-width:1080px (sass mixins used).
