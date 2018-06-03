@@ -1,5 +1,5 @@
 # we_create website
-This project one-page html-css only website is to practise my HTML and CSS skills. 
+This project one-page html-css only website is to practise my HTML and CSS skills.
 * The project has been started on Canada Learning Code workshop, 17.02.2018 and developed since then.
 * psd file by [The Awwwesomes](http://theawwwesomes.org/)
 
@@ -11,12 +11,15 @@ This project one-page html-css only website is to practise my HTML and CSS skill
 
 ### personal learnings:
 I wanted to make this one page site responsive with mobile-first approach. All the CSS styling is written for three screen widths: mobile, min-width:620px and min-width:1080px (sass mixins used).
-Please let me know, if you find any responsivnes issue.
+Please let me know, if you find any responsivness issue.
 
-* to-do: validate, check accessibility and performance
+:pushpin: to-do: validate, check accessibility and performance;
+
+:pushpin: to-fix: waves svgs; should they be html img tags or background properties - what's better for posisioning :question:
 
 ___________________________________
 [check my other projects](https://github.com/pinaska)
+
 
 Kate
 
