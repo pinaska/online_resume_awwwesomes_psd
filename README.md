@@ -17,6 +17,7 @@ Please let me know, if you find any responsivness issue.
 
 :pushpin: to-fix: waves svgs; should they be html img tags or background properties - what's better for posisioning :question:
 
+![we_create_mockup](/images/we_create_one_page.png)
 ___________________________________
 [check my other projects](https://github.com/pinaska)
 
