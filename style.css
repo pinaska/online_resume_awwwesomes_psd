@@ -79,7 +79,8 @@ h2 {
 h3 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #582782; }
+  color: #582782;
+  letter-spacing: 0.3rem; }
 
 h4 {
   font-size: 1.2rem; }
@@ -279,10 +280,10 @@ textarea {
       text-transform: uppercase; }
       @media (min-width: 620px) {
         .entry-text ol li a {
-          font-size: 2rem; } }
+          font-size: 1.5rem; } }
       @media (min-width: 1080px) {
         .entry-text ol li a {
-          font-size: 2.5rem; } }
+          font-size: 1.5rem; } }
 
 .we_create_ {
   font-size: 22.694px;
@@ -351,12 +352,12 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin-bottom: 5%; }
     @media (min-width: 620px) {
       .section-grid .text {
         margin-bottom: 0; } }
+    .section-grid .text p {
+      margin-top: 1.5rem; }
 
 /*ABOUT---------------------------------*/
 .about .text {
@@ -373,26 +374,34 @@ main {
     color: #e579d7;
     font-weight: bold;
     top: 4.5rem;
-    left: -5rem;
+    left: -0.8rem;
     font-size: 15rem;
     letter-spacing: 0.5rem;
     z-index: -6; }
+    @media (min-width: 620px) {
+      .about .text h3:before {
+        left: -5rem; } }
 
 /*WORK---------------------------------------------------*/
-.work .text {
-  margin-left: 3rem; }
-  .work .text h3 {
-    position: relative;
-    font-weight: bold; }
-    .work .text h3:after {
-      content: "2.";
-      position: absolute;
-      top: 4.5rem;
-      left: -5rem;
-      color: #fb7f97;
-      font-size: 15rem;
-      letter-spacing: 0.5rem;
-      z-index: -7; }
+.work .text h3 {
+  position: relative;
+  font-weight: bold; }
+  .work .text h3:after {
+    content: "2.";
+    position: absolute;
+    top: 4.5rem;
+    left: -1rem;
+    color: #fb7f97;
+    font-size: 15rem;
+    letter-spacing: 0.5rem;
+    z-index: -7; }
+    @media (min-width: 620px) {
+      .work .text h3:after {
+        left: -5rem; } }
+
+@media (min-width: 620px) {
+  .work .text {
+    margin-left: 3rem; } }
 
 /*MOTTO-----------------------------------------*/
 .motto {
@@ -442,6 +451,27 @@ main {
   width: 1259px;
   height: 149px;
   z-index: 44; }
+
+/*PROJECTS----------------------------------------*/
+.projects .text h3 {
+  margin-top: 1rem;
+  position: relative; }
+  .projects .text h3:before {
+    content: "3.";
+    position: absolute;
+    color: #e421b4;
+    font-weight: bold;
+    top: 4.5rem;
+    left: -1rem;
+    font-size: 15rem;
+    letter-spacing: 0.5rem;
+    z-index: -6; }
+    @media (min-width: 620px) {
+      .projects .text h3:before {
+        left: -4rem; } }
+    @media (min-width: 1080px) {
+      .projects .text h3:before {
+        left: -8.5rem; } }
 
 /*CONTACT---------------------------------------*/
 footer {

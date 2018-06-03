@@ -64,10 +64,10 @@
             text-transform: uppercase;
             a{
                 @include tablet{
-                font-size: 2rem;
+                font-size: 1.5rem;
                 }
                 @include desktop{
-                    font-size: 2.5rem;
+                    font-size: 1.5rem;
                 }
             }
         }
