@@ -214,28 +214,23 @@ textarea {
   position: relative; }
 
 #wave-top {
-  position: absolute;
-  width: 60%;
-  max-width: 600px;
   right: 0px;
-  bottom: -10px; }
-  @media (min-width: 620px) {
-    #wave-top {
-      bottom: -35px; } }
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  width: 600px; }
 
 #wave-top2 {
   right: 0px;
   position: absolute;
-  bottom: 20px;
-  z-index: 1;
-  width: 40%;
-  max-width: 400px; }
+  bottom: 50px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  width: 300px; }
   @media (min-width: 620px) {
     #wave-top2 {
-      bottom: 40px; } }
-  @media (min-width: 1080px) {
-    #wave-top2 {
-      bottom: 60px; } }
+      bottom: 100px; } }
 
 /*NAVIGATION------------------------------------------------------------------*/
 .entry-text {

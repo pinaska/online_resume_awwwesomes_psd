@@ -16,7 +16,7 @@ Please let me know, if you find any responsivness issue.
 
 :pushpin: to-do: validate, check accessibility and performance;
 
-:pushpin: to-fix: waves svgs; should they be html img tags or background properties - what's better for posisioning :question:
+:pushpin: to-fix: ~~waves svgs; should they be html img tags or background properties - what's better for posisioning~~~ as sugested by @aroerick I used transform:translateY and it worked :question:
 
 ![we_create_mockup](/images/we_create_one_page.png)
 ___________________________________
